@@ -1,7 +1,8 @@
 version: '3.7'
 services:
+  db:
+    image: mongo:4.2
   dev:
-    # image: nginx:alpine
     build: 
       context: .
       dockerfile: Dockerfile
