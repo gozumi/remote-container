@@ -5,7 +5,7 @@
 
 # To fully customize the contents of this image, use the following Dockerfile instead:
 # https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/javascript-node-12/.devcontainer/Dockerfile
-FROM nginx:alpine
+FROM node:14
 
 # The image referenced above includes a non-root user with sudo access. Add
 # the "remoteUser" property to devcontainer.json to use it. On Linux, the container

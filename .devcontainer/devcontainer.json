@@ -5,5 +5,5 @@
   "shutdownAction": "none",
   "extensions": ["golang.go"],
   // Open the sub-folder with the source code
-  "workspaceFolder": "/usr/share/nginx/html"
+  "workspaceFolder": "/local"
 }
