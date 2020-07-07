@@ -1,17 +1,18 @@
 version: '3.7'
 services:
   db:
+    container_name: dockerdb
     image: mongo:4.2
     ports:
-      - "27018:27017"
+      - 27017:27017
   dev:
+    container_name: theapp
     build: 
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8000:80"
     volumes:
       - ..:/local
-    network_mode: "bridge"
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+    environment:
+      DB_HOSTNAME: dockerdb
